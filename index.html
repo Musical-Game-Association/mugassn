@@ -112,12 +112,14 @@
     <header class="head_nav_neko_76_3_107 navbar" m-id='107' m-type="head_nav">
         <h1 hidden>Mugassn音游社</h1>
 
-        <!-- 导航列表 -->
-
-        <div class="nav-container J-nav-list">
+       <!-- 导航列表 -->
+<div class="nav-container J-nav-list">
     <ul class="nav-list clearfix">
         <li class="nav-item">
             <a href="./" title="首页" class="nav-link transition">首页</a>
+        </li>
+        <li class="nav-item pc-nav-item">
+            <a href="./?c=msg&amp;ts=aboutus" title="关于我们" class="nav-link transition">关于我们</a>
         </li>
         <li class="nav-item pc-nav-item">
             <a href="./?c=msg&amp;ts=contactus" title="联系我们" class="nav-link transition">联系我们</a>
@@ -139,7 +141,10 @@
                 <li><a href="javascript:translate.changeLanguage('chinese_traditional');">繁體中文</a></li>
             </ul>
         </li>
-        
+
+        <li class="nav-item mb-nav-item">
+            <a href="./?c=msg&amp;ts=aboutus" class="nav-link select-btn transition clearfix" title="" target="_self">关于我们</a>
+        </li>
         <li class="nav-item mb-nav-item">
             <a href="./?c=msg&amp;ts=contactus" class="nav-link select-btn transition clearfix" title="" target="_self">联系我们</a>
         </li>
@@ -173,10 +178,6 @@
 
 <!-- 添加CSS样式 -->
 <style>
-    .nav-container {
-        position: relative;
-    }
-
     .language-dropdown {
         display: none;
         list-style-type: none;
@@ -186,8 +187,6 @@
         background-color: white;
         border: 1px solid #ccc;
         z-index: 1000;
-        top: 100%; /* 确保下拉菜单在按钮下方 */
-        left: 0; /* 确保下拉菜单与按钮左对齐 */
         width: 100%;
         box-sizing: border-box;
     }
@@ -221,46 +220,6 @@
         width: auto;
     }
 </style>
-
-
-
-
-                    </ul>
-                    <!-- 二级栏目 -->
-                    <div class="category-two">
-
-                    </div>
-                </div>
-                <!--  移动端菜单按钮  -->
-                <div class="float-right menu-btn J-menu-btn"><span class="middle transition"></span></div>
-            </nav>
-        </div>
-    </header>
-    <input type="hidden" class="is-scroll" value="0" />
-    <input type="hidden" class="is-page" value="10001" />
-
-    <div class="banner_neko_11_1_2 page-bg" m-id='2' m-type="banner">
-        <a href="#">
-            <div class="slick-slide">
-                <img class="cover-image" src="upfiles/202303/24/a135cbbf1baa57810.jpg" srcset='upfiles/202303/24/a135cbbf1baa57810.jpg 767w,upfiles/202303/24/a135cbbf1baa57810.jpg' sizes="(max-width: 767px) 767px" alt="" data-height='0|0|0' data-fade="true" data-autoplayspeed=4000>
-            </div>
-        </a>
-
-    </div>
-
-    <style>
-        @media screen and (min-width: 768px) {
-            .hxcp a div {
-                padding-top: 10px;
-            }
-            .hxcp a h3 {
-                font-weight: 500 !important;
-            }
-            .hxcp a div p {
-                margin-bottom: 0px;
-            }
-        }
-    </style>
 
     <div class="service_list_neko_16_1_35 neko-index-body text-xs-center bgcolor display" m-id='35'>
         <div class="container">
