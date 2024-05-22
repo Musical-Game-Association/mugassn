@@ -119,7 +119,7 @@
 <img src="upfiles/201907/23/a5a758d67aa76b151.jpg" alt="Mugassn音游社" neko-id="83"
 neko-table="config" neko-field="value" class="">
 </a>
-                <!-- 导航列表 -->
+               <!-- 导航列表 -->
 <div class="nav-container J-nav-list">
     <ul class="nav-list clearfix">
         <li class="nav-item">
@@ -194,6 +194,8 @@ neko-table="config" neko-field="value" class="">
         background-color: white;
         border: 1px solid #ccc;
         z-index: 1000;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .dropdown:hover .language-dropdown {
@@ -209,6 +211,8 @@ neko-table="config" neko-field="value" class="">
         padding: 10px;
         text-decoration: none;
         color: black;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .language-dropdown li a:hover {
@@ -218,7 +222,12 @@ neko-table="config" neko-field="value" class="">
     .nav-item {
         position: relative;
     }
+
+    .nav-item.dropdown {
+        width: auto;
+    }
 </style>
+
 
 
                     </ul>
