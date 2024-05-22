@@ -542,5 +542,6 @@ class="more animation-slide-bottom">了解更多</a> -->
 <script>
     translate.selectLanguageTag.show = false; // 不出现的select的选择语言
     translate.service.use('client.edge'); // 设置机器翻译服务通道
+    translate.setAutoDiscriminateLocalLanguage(); // 设置用户第一次用时，自动识别其所在国家的语种进行切换
     translate.execute();
 </script>
