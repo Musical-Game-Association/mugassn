@@ -112,15 +112,9 @@
     <header class="head_nav_neko_76_3_107 navbar" m-id='107' m-type="head_nav">
         <h1 hidden>Mugassn音游社</h1>
 
-        <!--  导航区域  -->
-        <div class="container">
-            <nav class="head-nav clearfix">
-                <a href="http://www.mugassn.com/" title="Mugassn音游社" class="float-left logo-wrap">
-<img src="upfiles/201907/23/a5a758d67aa76b151.jpg" alt="Mugassn音游社" neko-id="83"
-neko-table="config" neko-field="value" class="">
-</a>
-               <!-- 导航列表 -->
-<div class="nav-container J-nav-list">
+        <!-- 导航列表 -->
+
+        <div class="nav-container J-nav-list">
     <ul class="nav-list clearfix">
         <li class="nav-item">
             <a href="./" title="首页" class="nav-link transition">首页</a>
@@ -145,7 +139,7 @@ neko-table="config" neko-field="value" class="">
                 <li><a href="javascript:translate.changeLanguage('chinese_traditional');">繁體中文</a></li>
             </ul>
         </li>
-
+        
         <li class="nav-item mb-nav-item">
             <a href="./?c=msg&amp;ts=contactus" class="nav-link select-btn transition clearfix" title="" target="_self">联系我们</a>
         </li>
@@ -161,16 +155,28 @@ neko-table="config" neko-field="value" class="">
         <li class="nav-item mb-nav-item dropdown">
             <a href="#" class="nav-link select-btn transition clearfix" title="" target="_self">语言更换</a>
             <ul class="ignore language-dropdown">
-                <li><a href="javascript:translate.changeLanguage('english');"style="color: black;">English</a></li>
-                <li><a href="javascript:translate.changeLanguage('chinese_simplified');"style="color: black;">简体中文</a></li>
-                <li><a href="javascript:translate.changeLanguage('chinese_traditional');"style="color: black;">繁體中文</a></li>
+                <li><a href="javascript:translate.changeLanguage('english');">English</a></li>
+                <li><a href="javascript:translate.changeLanguage('chinese_simplified');">简体中文</a></li>
+                <li><a href="javascript:translate.changeLanguage('chinese_traditional');">繁體中文</a></li>
             </ul>
         </li>
     </ul>
 </div>
 
+<!-- 引入多语言切换的js -->
+<script src="https://cdn.staticfile.net/translate.js/3.2.1/translate.js"></script>
+<script>
+    translate.selectLanguageTag.show = false; // 不出现的select的选择语言
+    translate.service.use('client.edge'); // 设置机器翻译服务通道
+    translate.execute();
+</script>
+
 <!-- 添加CSS样式 -->
 <style>
+    .nav-container {
+        position: relative;
+    }
+
     .language-dropdown {
         display: none;
         list-style-type: none;
@@ -180,6 +186,8 @@ neko-table="config" neko-field="value" class="">
         background-color: white;
         border: 1px solid #ccc;
         z-index: 1000;
+        top: 100%; /* 确保下拉菜单在按钮下方 */
+        left: 0; /* 确保下拉菜单与按钮左对齐 */
         width: 100%;
         box-sizing: border-box;
     }
@@ -196,8 +204,7 @@ neko-table="config" neko-field="value" class="">
         display: block;
         padding: 10px;
         text-decoration: none;
-        color: black;
-        background-color: white;
+        color: black; /* 确保文字颜色为黑色 */
         width: 100%;
         box-sizing: border-box;
     }
@@ -214,6 +221,7 @@ neko-table="config" neko-field="value" class="">
         width: auto;
     }
 </style>
+
 
 
 
