@@ -141,8 +141,10 @@ neko-table="config" neko-field="value" class="">
                             <a href="https://yinyoushe.cloudns.org" title="网络代理" class="nav-link transition">网络代理</a>
                         </li>
                         <li class="nav-item pc-nav-item">
-                            <a href="javascript:translate.changeLanguage(&amp;#39;english&amp;#39;);" title="语言更换" class="nav-link transition">语言更换</a>
-                        </li>
+                            <div class="nav-link transition">
+                                 <div id="translate"></div>
+                            </div>
+</li>
 
                         <li class="nav-item mb-nav-item">
                             <a href="./?c=msg&amp;ts=aboutus" class="nav-link select-btn transition clearfix" title="" target="_self">
@@ -165,10 +167,19 @@ neko-table="config" neko-field="value" class="">
 网络代理 </a>
                         </li>
                         <li class="nav-item mb-nav-item">
-                            <a href="javascript:translate.changeLanguage(&amp;#39;english&amp;#39;);" class="nav-link select-btn transition clearfix" title="" target="_self">
-语言更换 </a>
+                            <a class="nav-link select-btn transition clearfix" title="" target="_self">
+                               <div id="translate"></div>
+                            </a>
                         </li>
 
+    <style>
+    .translateSelectLanguage{
+        position: absolute;
+        top:100px;
+        right:100px;
+    }
+    </style>
+                        
                     </ul>
                     <!-- 二级栏目 -->
                     <div class="category-two">
@@ -215,7 +226,7 @@ neko-table="config" neko-field="value" class="">
                     <a href="https://shop.mugassn.com/shop/63.html" title="打包曲库" target='_blank'>
 <img data-original="upfiles/202303/24/a323f1f72a6eb6313.png" alt="打包曲库">
 <h3 class='m-t-20 m-b-5 font-weight-300'>打包曲库</h3>
-<div><p>内置200+热门音游谱</p><p>每周周末定时更新&nbsp;</p><p>符合大众休息时间</p></div>
+<div><p>内置300+热门音游谱</p><p>每周周末定时更新&nbsp;</p><p>多种难度谱面放送</p></div>
 </a>
                 </li>
                 <li class="invisible hxcp" data-plugin="appear" data-animate="slide-bottom50" data-repeat="false">
@@ -488,3 +499,12 @@ class="more animation-slide-bottom">了解更多</a> -->
 
 </html>
 <script src="templates/web/images/js/index_cn.js"></script>
+<!-- 引入多语言切换的js -->
+<script src="https://cdn.staticfile.net/translate.js/3.2.1/translate.js"></script>
+<script>
+	translate.selectLanguageTag.show = true; 
+    translate.service.use('client.edge'); 
+    translate.setAutoDiscriminateLocalLanguage(); 
+    translate.selectLanguageTag.languages = 'english,chinese_simplified,korean';
+	translate.execute();
+</script>
