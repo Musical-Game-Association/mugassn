@@ -141,7 +141,6 @@
                 <li><a href="javascript:translate.changeLanguage('chinese_traditional');">繁體中文</a></li>
             </ul>
         </li>
-
         <li class="nav-item mb-nav-item">
             <a href="./?c=msg&amp;ts=aboutus" class="nav-link select-btn transition clearfix" title="" target="_self">关于我们</a>
         </li>
@@ -168,15 +167,6 @@
     </ul>
 </div>
 
-<!-- 引入多语言切换的js -->
-<script src="https://cdn.staticfile.net/translate.js/3.2.1/translate.js"></script>
-<script>
-    translate.selectLanguageTag.show = false; // 不出现的select的选择语言
-    translate.service.use('client.edge'); // 设置机器翻译服务通道
-    translate.execute();
-</script>
-
-<!-- 添加CSS样式 -->
 <style>
     .language-dropdown {
         display: none;
@@ -194,11 +184,9 @@
     .dropdown:hover .language-dropdown {
         display: block;
     }
-
     .language-dropdown li {
         margin: 0;
     }
-
     .language-dropdown li a {
         display: block;
         padding: 10px;
@@ -211,7 +199,6 @@
     .language-dropdown li a:hover {
         background-color: #f0f0f0;
     }
-
     .nav-item {
         position: relative;
     }
