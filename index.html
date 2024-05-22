@@ -169,14 +169,6 @@ neko-table="config" neko-field="value" class="">
     </ul>
 </div>
 
-<!-- 引入多语言切换的js -->
-<script src="https://cdn.staticfile.net/translate.js/3.2.1/translate.js"></script>
-<script>
-    translate.selectLanguageTag.show = false; // 不出现的select的选择语言
-    translate.service.use('client.edge'); // 设置机器翻译服务通道
-    translate.execute();
-</script>
-
 <!-- 添加CSS样式 -->
 <style>
     .language-dropdown {
@@ -543,3 +535,11 @@ class="more animation-slide-bottom">了解更多</a> -->
 
 </html>
 <script src="templates/web/images/js/index_cn.js"></script>
+
+<!-- 引入多语言切换的js -->
+<script src="https://cdn.staticfile.net/translate.js/3.2.1/translate.js"></script>
+<script>
+    translate.selectLanguageTag.show = false; // 不出现的select的选择语言
+    translate.service.use('client.edge'); // 设置机器翻译服务通道
+    translate.execute();
+</script>
