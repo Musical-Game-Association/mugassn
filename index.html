@@ -165,10 +165,19 @@ neko-table="config" neko-field="value" class="">
 网络代理 </a>
                         </li>
                         <li class="nav-item mb-nav-item">
-                            <a href="javascript:translate.changeLanguage(&amp;#39;english&amp;#39;);" class="nav-link select-btn transition clearfix" title="" target="_self">
-语言更换 </a>
+    <!-- 语言切换按钮 -->
+                            <a href="javascript:translate.changeLanguage('english');" class="nav-link select-btn transition clearfix" title="English" target="_self">
+        English
+                            </a> |
+                            <a href="javascript:translate.changeLanguage('chinese_simplified');" class="nav-link select-btn transition clearfix" title="简体中文" target="_self">
+        简体中文
+                            </a> |
+                            <a href="javascript:translate.changeLanguage('chinese_traditional');" class="nav-link select-btn transition clearfix" title="繁體中文" target="_self">
+        繁體中文
+                            </a>
+    <!-- 结束语言切换按钮 -->
                         </li>
-
+                        
                     </ul>
                     <!-- 二级栏目 -->
                     <div class="category-two">
@@ -488,3 +497,11 @@ class="more animation-slide-bottom">了解更多</a> -->
 
 </html>
 <script src="templates/web/images/js/index_cn.js"></script>
+
+<!-- 引入多语言切换的js -->
+<script src="https://cdn.staticfile.net/translate.js/3.2.1/translate.js"></script>
+<script>
+    translate.selectLanguageTag.show = false; // 不出现的select的选择语言
+    translate.service.use('client.edge'); // 设置机器翻译服务通道
+    translate.execute();
+</script>
